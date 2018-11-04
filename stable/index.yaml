@@ -1,3 +1,13 @@
 apiVersion: v1
-entries: {}
-generated: 2018-11-05T00:51:30.342478392+09:00
+entries:
+  go-grpc:
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: 2018-11-05T00:58:17.489352764+09:00
+    description: A Helm chart for Kubernetes
+    digest: 6b514a5c8b3f33e3594de617248b590f9775fc46ffd0d43c5b78c2fa3dc89d67
+    name: go-grpc
+    urls:
+    - go-grpc-0.1.0.tgz
+    version: 0.1.0
+generated: 2018-11-05T00:58:17.4883781+09:00
