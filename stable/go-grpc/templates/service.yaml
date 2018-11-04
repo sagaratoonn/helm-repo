@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ include "go-grpc.fullname" . }}
+  labels:
+    app: {{ include "go-grpc.name" . }}
+    chart: {{ include "go-grpc.chart" . }}
+    release: {{ .Release.Name }}
+    heritage: {{ .Release.Service }}
+spec:
+  type: {{ .Values.service.type }}
+  ports:
+    - port: {{ .Values.service.port }}
+      targetPort: 19003
+      protocol: TCP
+      name: grpc
+  selector:
+    app: {{ include "go-grpc.name" . }}
+    release: {{ .Release.Name }}
